@@ -1,0 +1,1777 @@
+fileFormatVersion: 2
+guid: ade3aaa9cc209a243894c42d87724944
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 701
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b61b1ad530ee7f4d9d5c67e0bb006c2
+      internalID: -614011792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 701
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d0473593bcc014aa48820b9bde592f
+      internalID: -790696039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_2
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 701
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a412e94950ed8f442a3130860de2a3b4
+      internalID: -2043253579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 701
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c2e531939a0a841a147810500a9100
+      internalID: -1422698147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 648
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c3a7621b57d0bf43a565ac5edf93e0b
+      internalID: -238305885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_5
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 648
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c00bbc51a0b5b840814d14aaedafcd8
+      internalID: 1054403683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_6
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 648
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 649576fef384d194eaa535ac30b980a3
+      internalID: -1276540108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_7
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 648
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcf4f57bdee5ff043ae01b2acd00f404
+      internalID: -352233703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_8
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 648
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677ce4c166a7d544ead28491e7cb138d
+      internalID: 253841760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 648
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a35fd337577506499478a883452249c
+      internalID: -1545136138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_10
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 648
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3966bcc5782fe57448eb8131fa894779
+      internalID: -649901557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_11
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 648
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40804638f2db17d44bf6d53d31967e3f
+      internalID: 2065400316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 595
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f68bb7c73413844908a69de35926e2
+      internalID: -1439085664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_13
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 595
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b719efcf447f634099adbc5f862f30e
+      internalID: -2090325647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_14
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 595
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1c347208585f564aba2eb89a4691d02
+      internalID: -2055005529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_15
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 595
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f8927535b956b8408a560afc1569f1d
+      internalID: 678570892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_16
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 595
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e0b759e708f12a40a245598c93579e6
+      internalID: 11826282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_17
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 595
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0475f559cfbfc5b42ab54f2e2da44f7b
+      internalID: 1285636228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_18
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 595
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af9956926b094cf44b2f7dae6e01e854
+      internalID: -1101532570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_19
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 595
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4519cef0a579464e94dc1f002f1c142
+      internalID: 1977463690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 542
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 831173d0ed50c634ba55502f031225b7
+      internalID: -624071663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_21
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 542
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fbe730686684d146a2935a25e6f65a7
+      internalID: 1157528776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_22
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 542
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd815f6451bac0846a335397978814c7
+      internalID: 203926257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_23
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 542
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c3e3b37b2c89948a9485646e2e1a15
+      internalID: -1992525934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_24
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 542
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed47588ad9691a747b14615bf0308bdf
+      internalID: -58695417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_25
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 542
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 174a1012514586143bda53c35bceca8d
+      internalID: -460375734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_26
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 542
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c896094881ce6844aa50a2766b9882b
+      internalID: -54112082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_27
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 542
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0015cbd0ec38d4a44bd9c8096940c1bb
+      internalID: -1234132916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 489
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ca509c90f7ec6c4ca8b52352359f246
+      internalID: -656581419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_29
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 489
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e68dd9e81efeaf4dab0f7f454354baf
+      internalID: 587882985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_30
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 489
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f4aadf3b422934fa497dcaee9479e2
+      internalID: -256765586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_31
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 489
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 606c7a4df39339b448181773bf181845
+      internalID: -1944300770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_32
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 489
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d98b7e71acab324d85313a1d6891909
+      internalID: -415650805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_33
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 489
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5cbc306c536284fba92c5139789d84
+      internalID: 747762516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_34
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 489
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3b21260819b9ba4da7ec0931469756c
+      internalID: -1651988129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_35
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 490
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be889f21b17d3784790b66243450b685
+      internalID: -1983966956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 330
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec7ce0e727dfa4d49929e665d1b9dbf9
+      internalID: 1858345044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_37
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 330
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 536e5231f29912a43845304ac4f2c56c
+      internalID: -1699238515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_38
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 277
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a78f14a786e3af3439627b489161c571
+      internalID: 1530641300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_39
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 277
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9a3387ff44bf8b4191e72e2d1f04d0b
+      internalID: 1703926851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_40
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 277
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 003ffdcda4c0e5e42a6c75f4d63a9b82
+      internalID: 1928223885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_41
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e968de41e5906f048894c05341c1f984
+      internalID: -1518106844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_42
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 224
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbbb91b13cbe3444abe30d6d883b480
+      internalID: 807023794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_43
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 171
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54d3a9247a4f574da6b5fa7a5ec4c9d
+      internalID: -617464437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_44
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 171
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77eca8511f7deb1408c3a6ff8b14bd43
+      internalID: -2013914190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_45
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 171
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a5b8526aea59f4ca9a0b6fe9514f1b
+      internalID: 1101101055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_46
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 171
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fb4a1215656a14586d518472ec94d0
+      internalID: -853770473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 118
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166b56b1ff4bb5a498cee2e5439be316
+      internalID: 265883443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_48
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 118
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd544197cac6f3488d3123f276c11ff
+      internalID: 929112888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_49
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 118
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ce9c411c3f065142be5faabb264960e
+      internalID: 733883112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_50
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 118
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16443c345288a6e4cb66fcbf3c41fad2
+      internalID: 1448433351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 65
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d610691ff9a35740b8918d09f394cd0
+      internalID: -205096517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_52
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 65
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f2ccfdda32de6419b66c4c855bd80b
+      internalID: 556768227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_53
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 65
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 913a671f5d2b8194d9df8f7f255c2777
+      internalID: -928460741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_54
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 65
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d31b1a4d1b1ade449984cd8330460ab9
+      internalID: -881402658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_55
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 65
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ba82aec2a7528f488a253e089d13627
+      internalID: 1981967229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_56
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 408743178146f634ba64aaa9c7ef98f1
+      internalID: 1670554711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_57
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac6ed8788539ce43a859deb98120656
+      internalID: 466844064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_58
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d10904644547f3745abe62241b64c70c
+      internalID: 955991629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_59
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 477c2b7df1f0bb54aa82f54a0abbac01
+      internalID: 1567990449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_60
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72797c67d7a56284d833c99578b6dc25
+      internalID: 302670048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_61
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be4444b4e6fa5e049b584bb57c18d408
+      internalID: 2133285987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_62
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 554b1f7547d33454bb9b99ec4e387521
+      internalID: 446648438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_63
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d26681d63c440445952613ccdd7101f
+      internalID: 848597806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_64
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229ff0312d41d2d4194831077df10ce9
+      internalID: -1789617838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_65
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 305dda18b2ec7cd47aea58160f0f7010
+      internalID: 1440632591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_66
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d06e5fa4bb1f84144aa23eca2e7b98f4
+      internalID: -218185324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_67
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab9599504a9c1e04e86cd3871aa17a5c
+      internalID: -1732078671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_68
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f48bfa439419b824aa636ced63a1f695
+      internalID: -1700356098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_69
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e096ebe9c231d8e4788a9d7621402761
+      internalID: 111773379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_70
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbaf3876b19ceb741bf982b84eb80506
+      internalID: -1223088074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_71
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2a1205dfec3e54ab8554fbbe50baf7
+      internalID: -1161876111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_72
+      rect:
+        serializedVersion: 2
+        x: 864
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca2ded2671045f743b0d17cac64ed341
+      internalID: -1812009344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_73
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 12
+        width: 42
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d1f728cdcec774e827de423913c8b5
+      internalID: 2059442146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Hero Blue 54x53 Sprite_74
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 722
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 368d40f2e72de2147bd4da0ef63a3312
+      internalID: -294120187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Hero Blue 54x53 Sprite_0: -614011792
+      Hero Blue 54x53 Sprite_1: -790696039
+      Hero Blue 54x53 Sprite_10: -649901557
+      Hero Blue 54x53 Sprite_11: 2065400316
+      Hero Blue 54x53 Sprite_12: -1439085664
+      Hero Blue 54x53 Sprite_13: -2090325647
+      Hero Blue 54x53 Sprite_14: -2055005529
+      Hero Blue 54x53 Sprite_15: 678570892
+      Hero Blue 54x53 Sprite_16: 11826282
+      Hero Blue 54x53 Sprite_17: 1285636228
+      Hero Blue 54x53 Sprite_18: -1101532570
+      Hero Blue 54x53 Sprite_19: 1977463690
+      Hero Blue 54x53 Sprite_2: -2043253579
+      Hero Blue 54x53 Sprite_20: -624071663
+      Hero Blue 54x53 Sprite_21: 1157528776
+      Hero Blue 54x53 Sprite_22: 203926257
+      Hero Blue 54x53 Sprite_23: -1992525934
+      Hero Blue 54x53 Sprite_24: -58695417
+      Hero Blue 54x53 Sprite_25: -460375734
+      Hero Blue 54x53 Sprite_26: -54112082
+      Hero Blue 54x53 Sprite_27: -1234132916
+      Hero Blue 54x53 Sprite_28: -656581419
+      Hero Blue 54x53 Sprite_29: 587882985
+      Hero Blue 54x53 Sprite_3: -1422698147
+      Hero Blue 54x53 Sprite_30: -256765586
+      Hero Blue 54x53 Sprite_31: -1944300770
+      Hero Blue 54x53 Sprite_32: -415650805
+      Hero Blue 54x53 Sprite_33: 747762516
+      Hero Blue 54x53 Sprite_34: -1651988129
+      Hero Blue 54x53 Sprite_35: -1983966956
+      Hero Blue 54x53 Sprite_36: 1858345044
+      Hero Blue 54x53 Sprite_37: -1699238515
+      Hero Blue 54x53 Sprite_38: 1530641300
+      Hero Blue 54x53 Sprite_39: 1703926851
+      Hero Blue 54x53 Sprite_4: -238305885
+      Hero Blue 54x53 Sprite_40: 1928223885
+      Hero Blue 54x53 Sprite_41: -1518106844
+      Hero Blue 54x53 Sprite_42: 807023794
+      Hero Blue 54x53 Sprite_43: -617464437
+      Hero Blue 54x53 Sprite_44: -2013914190
+      Hero Blue 54x53 Sprite_45: 1101101055
+      Hero Blue 54x53 Sprite_46: -853770473
+      Hero Blue 54x53 Sprite_47: 265883443
+      Hero Blue 54x53 Sprite_48: 929112888
+      Hero Blue 54x53 Sprite_49: 733883112
+      Hero Blue 54x53 Sprite_5: 1054403683
+      Hero Blue 54x53 Sprite_50: 1448433351
+      Hero Blue 54x53 Sprite_51: -205096517
+      Hero Blue 54x53 Sprite_52: 556768227
+      Hero Blue 54x53 Sprite_53: -928460741
+      Hero Blue 54x53 Sprite_54: -881402658
+      Hero Blue 54x53 Sprite_55: 1981967229
+      Hero Blue 54x53 Sprite_56: 1670554711
+      Hero Blue 54x53 Sprite_57: 466844064
+      Hero Blue 54x53 Sprite_58: 955991629
+      Hero Blue 54x53 Sprite_59: 1567990449
+      Hero Blue 54x53 Sprite_6: -1276540108
+      Hero Blue 54x53 Sprite_60: 302670048
+      Hero Blue 54x53 Sprite_61: 2133285987
+      Hero Blue 54x53 Sprite_62: 446648438
+      Hero Blue 54x53 Sprite_63: 848597806
+      Hero Blue 54x53 Sprite_64: -1789617838
+      Hero Blue 54x53 Sprite_65: 1440632591
+      Hero Blue 54x53 Sprite_66: -218185324
+      Hero Blue 54x53 Sprite_67: -1732078671
+      Hero Blue 54x53 Sprite_68: -1700356098
+      Hero Blue 54x53 Sprite_69: 111773379
+      Hero Blue 54x53 Sprite_7: -352233703
+      Hero Blue 54x53 Sprite_70: -1223088074
+      Hero Blue 54x53 Sprite_71: -1161876111
+      Hero Blue 54x53 Sprite_72: -1812009344
+      Hero Blue 54x53 Sprite_73: 2059442146
+      Hero Blue 54x53 Sprite_74: -294120187
+      Hero Blue 54x53 Sprite_8: 253841760
+      Hero Blue 54x53 Sprite_9: -1545136138
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
