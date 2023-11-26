@@ -9,10 +9,10 @@ public class AimRotator : MonoBehaviour
     void Update()
     {
         GetTargetPosition();
-    } 
+    }
     private void GetTargetPosition()
     {
-        if(player != null)
+        if (player != null)
         {
             targetPosition = player.transform.position;
             targetPosition.z = player.transform.position.z;
@@ -24,10 +24,13 @@ public class AimRotator : MonoBehaviour
             targetPosition.z = Camera.main.nearClipPlane;
             worldpos = Camera.main.ScreenToWorldPoint(targetPosition);
         }
+        RotateAimTarget(worldpos, transform);
+    }
+    private void RotateAimTarget(Vector3 worldpos, Transform transform)
+    {
         Vector3 rotation = (worldpos - transform.position).normalized;
 
         float rotationZ = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rotationZ);
     }
-
 }
