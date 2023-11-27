@@ -20,6 +20,7 @@ public class CharacterView : MonoBehaviour
 
     private void Update()
     {
+        //TODO: TP2 - Optimization - Should be event based
         if(characterHP.HP <= 0)
         {
             isDeadAnimation();

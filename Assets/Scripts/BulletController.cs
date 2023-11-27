@@ -5,6 +5,7 @@ public class BulletController : MonoBehaviour
     [SerializeField] HealthPoints bulletHealth;
     [SerializeField] Animator bulletAnimation;
     [SerializeField] string animatorParameterIsDead = "isDead";
+    //TODO: TP1 - Unused method/variable
     [SerializeField] GameObject player;
     [SerializeField] AudioSource bullet;
 
@@ -21,6 +22,7 @@ public class BulletController : MonoBehaviour
         if (bulletHealth != null)
         {
 
+            //TODO: TP2 - Optimization - Should be event based
             if (bulletHealth.HP <= 0)
             {
                 GetComponent<CircleCollider2D>().enabled = false;

@@ -4,6 +4,7 @@ using UnityEngine;
 public class Boss2Controller : MonoBehaviour
 {
     [SerializeField] Boss2Logic IAcontroller;
+    //TODO: TP1 - Unused method/variable
     [SerializeField] CharacterMovement Movement;
     [SerializeField] GameObject player;
     [SerializeField] float movementTimer;

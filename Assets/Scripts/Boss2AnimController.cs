@@ -15,6 +15,7 @@ public class Boss2AnimController : MonoBehaviour
 
 
 
+    //TODO: TP2 - Syntax - Consistency in naming convention - Rename to EnableOrDisable
     public void AttackAnimationWalk(bool EnableORdisable)
     {
         AttackAnimation(animatorParameterOnWalkAttack, EnableORdisable);

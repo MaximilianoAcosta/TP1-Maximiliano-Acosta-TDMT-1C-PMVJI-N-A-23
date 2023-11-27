@@ -4,6 +4,7 @@ using UnityEngine;
 public class BulletPool : MonoBehaviour
 {
     [SerializeField] private GameObject bulletPrefab;
+    //TODO: TP2 - Spelling error/Code in spanish/Code in spanglish
     [SerializeField] private GameObject playerBulletPrefav;
     [SerializeField] private GameObject BIGPrefav;
     
@@ -15,6 +16,7 @@ public class BulletPool : MonoBehaviour
 
     [SerializeField] private List<GameObject> bulletList;
     [SerializeField] private List<GameObject> playerBulletList;
+    //TODO: TP2 - Syntax - Consistency in naming convention
     [SerializeField] private List<GameObject> BigList;
       
     void Start()

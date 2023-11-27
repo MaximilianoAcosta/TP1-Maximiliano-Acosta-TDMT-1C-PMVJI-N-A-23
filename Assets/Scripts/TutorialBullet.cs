@@ -10,6 +10,7 @@ public class TutorialBullet : MonoBehaviour
     }
     public IEnumerator ResetPosition( Vector3 startingPosition)
     {
+        //TODO: TP2 - Fix - Hardcoded value/s
         yield return new WaitForSeconds(2);
         transform.position = startingPosition;
         StartCoroutine(ResetPosition(transform.position));

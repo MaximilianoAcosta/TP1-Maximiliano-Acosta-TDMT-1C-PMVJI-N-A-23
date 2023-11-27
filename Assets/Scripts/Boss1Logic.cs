@@ -4,6 +4,8 @@ using UnityEngine.Events;
 using UnityEngine;
 
 
+//TODO: TP2 - Unclear name - Logic is not a very good name. All C# is logic.
+//A better name could be BossActions, or even BossBehaviour
 public class Boss1Logic : MonoBehaviour
 {
     [SerializeField] GameObject pool;
@@ -97,6 +99,7 @@ public class Boss1Logic : MonoBehaviour
         BossController.ResetShot();
     }
     
+    //TODO: TP2 - Syntax - Consistency in naming convention - Rename to BigShot
     public IEnumerator BIGShot()
     {
         yield return new WaitForSeconds(ShotingCooldown);
@@ -111,6 +114,7 @@ public class Boss1Logic : MonoBehaviour
 
     private void Attack(Gun gun)
     {
+        //TODO: TP2 - Optimization - Cache values/refs - cache the pool.GetComponent
         GameObject attack = pool.GetComponent<BulletPool>().GetBullet();
         gun.Shoot(attack, ShotPotency);
 

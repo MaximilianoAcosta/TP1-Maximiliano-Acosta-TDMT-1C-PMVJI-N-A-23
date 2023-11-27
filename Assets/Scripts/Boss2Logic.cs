@@ -40,6 +40,7 @@ public class Boss2Logic : MonoBehaviour
 
     private void Update()
     {
+        //TODO: TP2 - Optimization - Should be event based
         if (this.GetComponent<HealthPoints>().HP <= 0)
         {
             StopAllCoroutines();
