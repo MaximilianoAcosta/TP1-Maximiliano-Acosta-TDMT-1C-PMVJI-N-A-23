@@ -9,6 +9,7 @@ public class BurstBulletController : MonoBehaviour
     [SerializeField] float numberOfProyectiles;
     [SerializeField] float aliveTime;
     [SerializeField] HealthPoints bulletHealth ;
+    //TODO: TP1 - Unused method/variable
     BulletPool bulletPool;
     private float radiusRingAttack;
     private float angleRingAttack;
@@ -48,6 +49,7 @@ public class BurstBulletController : MonoBehaviour
             angleRingAttack += angleStep;
 
         }
+        //TODO: TP2 - Fix - Hardcoded value/s
         bulletHealth.TakeDamage(1);
     }
 

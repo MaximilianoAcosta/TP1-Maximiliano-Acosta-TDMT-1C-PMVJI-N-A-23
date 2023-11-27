@@ -18,6 +18,7 @@ public class Gun : MonoBehaviour
 
     private void Update()
     {
+        //TODO: TP2 - Could be a coroutine/Invoke
         gunTimer += Time.deltaTime;
         if(gunTimer >= TimerCheck)
         {
