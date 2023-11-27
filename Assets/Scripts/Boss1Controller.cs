@@ -1,8 +1,8 @@
 using UnityEngine;
 
-public class BossController : MonoBehaviour
+public class Boss1Controller : MonoBehaviour
 {
-    [SerializeField] BossLogic IAcontroller;
+    [SerializeField] Boss1Logic IAcontroller;
     private static float TpMinX = -1f;
     private static float TpMaxX = 4.5f;
     private static float TpMinY = -2f;

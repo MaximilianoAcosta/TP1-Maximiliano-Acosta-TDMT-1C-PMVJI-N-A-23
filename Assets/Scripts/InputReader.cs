@@ -17,6 +17,7 @@ public class InputReader : MonoBehaviour
     [SerializeField] private Gun gun;
 
     [SerializeField] public AudioSource playerAudio;
+    [SerializeField] public AudioSource Dashaudio;
 
     private Vector2 inputValue;
     private bool canDash = true;
@@ -25,9 +26,7 @@ public class InputReader : MonoBehaviour
     public void SetMovementValue(InputAction.CallbackContext inputContext)
     {
 
-            
-
-            inputValue = inputContext.ReadValue<Vector2>();
+        inputValue = inputContext.ReadValue<Vector2>();
         if (!isDashing)
         {
             if (inputContext.started)
@@ -36,10 +35,10 @@ public class InputReader : MonoBehaviour
 
             }
             characterMovement.SetDirection(inputValue);
-            
+
             if (inputContext.canceled)
             {
-                
+
                 playerAudio.Stop();
             }
         }
@@ -64,22 +63,26 @@ public class InputReader : MonoBehaviour
         {
             if (canDash)
             {
-                StartCoroutine(Dash());
+                
+                StartCoroutine(DashAction());
+                
             }
         }
     }
-    private IEnumerator Dash()
+    private IEnumerator DashAction()
     {
         canDash = false;
         isDashing = true;
         characterHitBox.enabled = false;
         characterView.isDashingAnimation(true);
+        Dashaudio.Play();
         characterMovement.SetDirection(inputValue * dashingPower);
         yield return new WaitForSeconds(dashingTime);
         characterView.isDashingAnimation(false);
         characterMovement.SetDirection(inputValue);
         characterHitBox.enabled = true;
         isDashing = false;
+        Dashaudio.Stop();
         yield return new WaitForSeconds(dashingCooldown);
         canDash = true;
     }

@@ -14,6 +14,7 @@ public class AimRotator : MonoBehaviour
     {
         if (player != null)
         {
+           
             targetPosition = player.transform.position;
             targetPosition.z = player.transform.position.z;
             worldpos = player.transform.position;
@@ -26,6 +27,7 @@ public class AimRotator : MonoBehaviour
         }
         RotateAimTarget(worldpos, transform);
     }
+    
     private void RotateAimTarget(Vector3 worldpos, Transform transform)
     {
         Vector3 rotation = (worldpos - transform.position).normalized;

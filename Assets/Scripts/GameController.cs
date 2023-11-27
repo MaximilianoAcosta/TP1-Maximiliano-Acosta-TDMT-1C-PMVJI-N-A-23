@@ -106,11 +106,11 @@ public class GameController : MonoBehaviour
 
     private void CheckPhaseChange(GameObject boss1, GameObject boss2, HealthPoints bossHP1)
     {
-        if (boss1.GetComponent<BossLogic>().phase == 1 && bossHP1.HP <= bossHP1.maxHP * 3 / 4)
+        if (boss1.GetComponent<Boss1Logic>().phase == 1 && bossHP1.HP <= bossHP1.maxHP * 3 / 4)
         {
             PhaseChange(boss1, 2);
         }
-        if (boss1.GetComponent<BossLogic>().phase == 2 && bossHP1.HP <= bossHP1.maxHP / 3)
+        if (boss1.GetComponent<Boss1Logic>().phase == 2 && bossHP1.HP <= bossHP1.maxHP / 3)
         {
             PhaseChange(boss1, 3);
         }
@@ -129,7 +129,7 @@ public class GameController : MonoBehaviour
         int newRingAmmount = 0;
         float newShotPotency = 0;
         float newLineAttackDelay = 0;
-        BossLogic valueToChange = boss.GetComponent<BossLogic>();
+        Boss1Logic valueToChange = boss.GetComponent<Boss1Logic>();
         if (phase == 2)
         {
             newShotingCooldown = phase2ShotingCooldown;

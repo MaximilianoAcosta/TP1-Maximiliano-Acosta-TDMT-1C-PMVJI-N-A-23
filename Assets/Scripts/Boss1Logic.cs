@@ -1,15 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.Events;
 using UnityEngine;
 
 
-public class BossLogic : MonoBehaviour
+public class Boss1Logic : MonoBehaviour
 {
     [SerializeField] GameObject pool;
     [SerializeField] List<Gun> Guns;
     [SerializeField] Gun GunForRing;
-    [SerializeField] BossAnimController Animation;
-    [SerializeField] BossController BossController;
+    [SerializeField] Boss1AnimController Animation;
+    [SerializeField] Boss1Controller BossController;
     [SerializeField] public float ShotPotency;
     [Space(20)]
     [SerializeField] public float ShotingCooldown;
@@ -26,11 +27,13 @@ public class BossLogic : MonoBehaviour
     [Space(20)]
     [SerializeField] float LineAttackDuration;
     [SerializeField] public float LineAttackDelay;
-
-    public int phase = 1;
-
     private float radiusRingAttack = 10f;
     private float angleRingAttack = 10f;
+    public int phase = 1;
+
+    
+
+
 
     public IEnumerator BasicShot()
     {
@@ -112,12 +115,6 @@ public class BossLogic : MonoBehaviour
         gun.Shoot(attack, ShotPotency);
 
     }
-    private void BIGAttack(Gun gun)
-    {
-        GameObject attack = pool.GetComponent<BulletPool>().GetBigBullet();
-        gun.Shoot(attack, ShotPotency);
-    }
-    
     private void Attack(int numberOfProyectiles, Gun gun)
     {
 
@@ -141,5 +138,10 @@ public class BossLogic : MonoBehaviour
 
         }
     }
+    private void BIGAttack(Gun gun)
+    {
+        GameObject attack = pool.GetComponent<BulletPool>().GetBigBullet();
+        gun.Shoot(attack, ShotPotency);
+    }  
    
 }
