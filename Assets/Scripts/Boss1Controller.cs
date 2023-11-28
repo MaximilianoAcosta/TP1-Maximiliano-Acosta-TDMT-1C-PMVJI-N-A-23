@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Boss1Controller : MonoBehaviour
 {
-    [SerializeField] Boss1Logic IAcontroller;
+    [SerializeField] Boss1Behaviour iaController;
     private static float TpMinX = -1f;
     private static float TpMaxX = 4.5f;
     private static float TpMinY = -2f;
@@ -11,7 +11,7 @@ public class Boss1Controller : MonoBehaviour
     void Start()
     {
         
-        StartCoroutine(IAcontroller.Teleport(TpMinX, TpMaxX, TpMinY, TpMaxY));
+        StartCoroutine(iaController.Teleport(TpMinX, TpMaxX, TpMinY, TpMaxY));
     }
     public void ResetShot()
     {
@@ -21,23 +21,23 @@ public class Boss1Controller : MonoBehaviour
         // StartCoroutine(attacks[randomValue]);
         if (randomValue == 0)
         {
-            StartCoroutine(IAcontroller.RingShot());
+            StartCoroutine(iaController.RingShot());
         }
         else if (randomValue == 1)
         {
-            StartCoroutine(IAcontroller.BasicShot());
+            StartCoroutine(iaController.BasicShot());
         }
         else if (randomValue == 2)
         {
-            StartCoroutine(IAcontroller.Teleport(TpMinX, TpMaxX, TpMinY, TpMaxY));
+            StartCoroutine(iaController.Teleport(TpMinX, TpMaxX, TpMinY, TpMaxY));
         }
         else if (randomValue == 3)
         {
-            StartCoroutine(IAcontroller.LineShot());
+            StartCoroutine(iaController.LineShot());
         }
         else if(randomValue == 4)
         {
-            StartCoroutine(IAcontroller.BIGShot());
+            StartCoroutine(iaController.BigShot());
         }
 
     }

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Boss2AnimController : MonoBehaviour
@@ -16,29 +14,29 @@ public class Boss2AnimController : MonoBehaviour
 
 
     //TODO: TP2 - Syntax - Consistency in naming convention - Rename to EnableOrDisable
-    public void AttackAnimationWalk(bool EnableORdisable)
+    public void AttackAnimationWalk(bool EnableOrDisable)
     {
-        AttackAnimation(animatorParameterOnWalkAttack, EnableORdisable);
+        AttackAnimation(animatorParameterOnWalkAttack, EnableOrDisable);
     }
-    public void AttackAnimationRay(bool EnableORdisable)
+    public void AttackAnimationRay(bool EnableOrDisable)
     {
-        AttackAnimation(animatorParameterOnRayAttack, EnableORdisable);
+        AttackAnimation(animatorParameterOnRayAttack, EnableOrDisable);
     }
-    public void AttackAnimationSlam(bool EnableORdisable)
+    public void AttackAnimationSlam(bool EnableOrDisable)
     {
-        AttackAnimation(animatorParameterStompAttack, EnableORdisable);
+        AttackAnimation(animatorParameterStompAttack, EnableOrDisable);
     }
-    public void AttackAnimationTeleport(bool EnableORdisable)
+    public void AttackAnimationTeleport(bool EnableOrDisable)
     {
-        AttackAnimation(animatorParameterJumpAttack, EnableORdisable);
+        AttackAnimation(animatorParameterJumpAttack, EnableOrDisable);
     }
-    public void AttackAnimationLastAttack(bool EnableORdisable)
+    public void AttackAnimationLastAttack(bool EnableOrDisable)
     {
-        AttackAnimation(animatorParameterLastPhase, EnableORdisable);
+        AttackAnimation(animatorParameterLastPhase, EnableOrDisable);
     }
-    public void AttackAnimationDeath(bool EnableORdisable)
+    public void AttackAnimationDeath(bool EnableOrDisable)
     {
-        AttackAnimation(animatorParameterDeath, EnableORdisable);
+        AttackAnimation(animatorParameterDeath, EnableOrDisable);
     }
     private void AttackAnimation(string AnimationParameter, bool onAttack)
     {

@@ -10,7 +10,7 @@ public class CharacterMovement : MonoBehaviour
     private void FixedUpdate()
     {
         //TODO: TP2 - Fix - In fixedUpdate we use Time.fixedDeltaTime
-        transform.position += new Vector3(direction.x, direction.y) * (speed * Time.deltaTime);
+        transform.position += new Vector3(direction.x, direction.y) * (speed * Time.fixedDeltaTime);
         
     }
 

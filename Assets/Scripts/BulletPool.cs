@@ -3,27 +3,27 @@ using UnityEngine;
 
 public class BulletPool : MonoBehaviour
 {
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] GameObject bulletPrefab;
     //TODO: TP2 - Spelling error/Code in spanish/Code in spanglish
-    [SerializeField] private GameObject playerBulletPrefav;
-    [SerializeField] private GameObject BIGPrefav;
-    
+    [SerializeField] GameObject playerBulletPrefab;
+    [SerializeField] GameObject bigPrefav;
 
-    [SerializeField] private int poolSize;
-    [SerializeField] private int playerPoolSize;
-    [SerializeField] private int BIGSize;
-    
 
-    [SerializeField] private List<GameObject> bulletList;
-    [SerializeField] private List<GameObject> playerBulletList;
+    [SerializeField] int poolSize;
+    [SerializeField] int playerPoolSize;
+    [SerializeField] int bigSize;
+
+
+    [SerializeField] List<GameObject> bulletList;
+    [SerializeField] List<GameObject> playerBulletList;
     //TODO: TP2 - Syntax - Consistency in naming convention
-    [SerializeField] private List<GameObject> BigList;
-      
+    [SerializeField] List<GameObject> bigList;
+
     void Start()
     {
         AddBulletsToPool(bulletList, bulletPrefab, poolSize);
-        AddBulletsToPool(playerBulletList, playerBulletPrefav, playerPoolSize);
-        AddBulletsToPool(BigList, BIGPrefav, BIGSize);
+        AddBulletsToPool(playerBulletList, playerBulletPrefab, playerPoolSize);
+        AddBulletsToPool(bigList, bigPrefav, bigSize);
     }
 
     private void AddBulletsToPool(List<GameObject> pool, GameObject bullet, int ammount)
@@ -42,11 +42,11 @@ public class BulletPool : MonoBehaviour
     }
     public GameObject GetPlayerBullet()
     {
-        return ChoseBulletFromList(playerBulletList, playerBulletPrefav);
+        return ChoseBulletFromList(playerBulletList, playerBulletPrefab);
     }
     public GameObject GetBigBullet()
     {
-        return ChoseBulletFromList(BigList, BIGPrefav);
+        return ChoseBulletFromList(bigList, bigPrefav);
     }
 
     private GameObject ChoseBulletFromList(List<GameObject> pool, GameObject bullet)

@@ -7,11 +7,18 @@ public class AimRotator : MonoBehaviour
     //Or just serialize a property
     //[field: SerializeField]public GameObject Target { get; set; }
     //TODO: TP2 - Unclear name - A better name would be "target".
-    [SerializeField] public GameObject player;
-    private Vector3 targetPosition;
+    [SerializeField] public GameObject target;
+    Vector3 targetPosition;
     //TODO: TP2 - Syntax - Consistency in access modifiers (private/protected/public/etc)
-    Vector3 worldpos;
+    Vector3 worldPosition;
+    new Camera camera;
+    Mouse mouse;
     //TODO: TP2 - Syntax - Consistency in access modifiers (private/protected/public/etc)
+    private void Awake()
+    {
+        camera = Camera.main;
+        mouse = Mouse.current;
+    }
     void Update()
     {
         GetTargetPosition();
@@ -19,22 +26,22 @@ public class AimRotator : MonoBehaviour
     private void GetTargetPosition()
     {
         //TODO: TP2 - Comment - If you know about inheritance already, try separating these 2 behaviours into different inheritor classes. There is no problem if you can't
-        if (player != null)
+        if (target != null)
         {
            
-            targetPosition = player.transform.position;
+            targetPosition = target.transform.position;
             //TODO: TP2 - Fix - Clean code
-            targetPosition.z = player.transform.position.z;
-            worldpos = player.transform.position;
+            targetPosition.z = target.transform.position.z;
+            worldPosition = target.transform.position;
         }
         else
         {
-            targetPosition = Mouse.current.position.ReadValue();
+            targetPosition = mouse.position.ReadValue();
             //TODO: TP2 - Optimization - Cache values/refs
-            targetPosition.z = Camera.main.nearClipPlane;
-            worldpos = Camera.main.ScreenToWorldPoint(targetPosition);
+            targetPosition.z = camera.nearClipPlane;
+            worldPosition = camera.ScreenToWorldPoint(targetPosition);
         }
-        RotateAimTarget(worldpos, transform);
+        RotateAimTarget(worldPosition, transform);
     }
     
     private void RotateAimTarget(Vector3 worldpos, Transform transform)

@@ -297,7 +297,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pool: {fileID: 0}
   dashingPower: 5
-  dashingTime: 0.1
+  dashingTime: 0.12
   dashingCooldown: 0.3
   characterMovement: {fileID: 6349728133471784083}
   characterHitBox: {fileID: 3189747873446885465}
@@ -457,7 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   capsuleCollider: {fileID: 3189747873446885465}
-  invulnTimer: 1
+  invulnerabilityTimer: 0.6
 --- !u!82 &2843264132197757707
 AudioSource:
   m_ObjectHideFlags: 0
@@ -691,7 +691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2308451df0d67342ac85d1544544609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  target: {fileID: 0}
 --- !u!1 &7427701103725116930
 GameObject:
   m_ObjectHideFlags: 0
@@ -5536,7 +5536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 761626238572937555}
-  TimerCheck: 0.3
+  timerCheck: 0.2
   gunAudio: {fileID: 3609897253141401217}
 --- !u!82 &3609897253141401217
 AudioSource:

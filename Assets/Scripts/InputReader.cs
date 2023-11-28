@@ -4,7 +4,7 @@ using UnityEngine.InputSystem;
 
 public class InputReader : MonoBehaviour
 {
-    [SerializeField] private GameObject pool;
+    [SerializeField] private BulletPool pool;
 
     [SerializeField] private float dashingPower = 20f;
     [SerializeField] private float dashingTime = 0.2f;
@@ -52,7 +52,7 @@ public class InputReader : MonoBehaviour
         }
         if (inputContext.started)
         {
-            GameObject attack = pool.GetComponent<BulletPool>().GetPlayerBullet();
+            GameObject attack = pool.GetPlayerBullet();
             gun.Shoot(attack);
         }
     }

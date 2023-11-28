@@ -3,27 +3,26 @@ using UnityEngine;
 
 public class BurstBulletController : MonoBehaviour
 {
-    [SerializeField] GameObject pool;
+    [SerializeField] BulletPool pool;
     [SerializeField] Gun gun;
     [SerializeField] float ShotPotency;
     [SerializeField] float numberOfProyectiles;
     [SerializeField] float aliveTime;
     [SerializeField] HealthPoints bulletHealth ;
+    const int  BulletDamageTaken = 1 ;
     //TODO: TP1 - Unused method/variable
-    BulletPool bulletPool;
-    private float radiusRingAttack;
-    private float angleRingAttack;
+    float radiusRingAttack;
+    float angleRingAttack;
 
     private void Awake()
     {
-        pool = GameObject.FindGameObjectWithTag("pool");
+        pool = GameObject.FindGameObjectWithTag("pool").GetComponent<BulletPool>();
         bulletHealth = GetComponent<HealthPoints>();
     }
 
 
     void OnEnable()
-    {
-        bulletPool = pool.GetComponent<BulletPool>();
+    {       
         StartCoroutine(burstBulletShot());
     }
     private IEnumerator burstBulletShot()
@@ -38,7 +37,7 @@ public class BurstBulletController : MonoBehaviour
 
         for (int i = 0; i <= numberOfProyectiles - 1; i++)
         {
-            GameObject attack = pool.GetComponent<BulletPool>().GetBullet();
+            GameObject attack = pool.GetBullet();
 
             float projectileDirXposition = startPoint.x + Mathf.Sin((angleRingAttack * Mathf.PI) / 180) * radiusRingAttack;
             float projectileDirYposition = startPoint.y + Mathf.Cos((angleRingAttack * Mathf.PI) / 180) * radiusRingAttack;
@@ -50,7 +49,7 @@ public class BurstBulletController : MonoBehaviour
 
         }
         //TODO: TP2 - Fix - Hardcoded value/s
-        bulletHealth.TakeDamage(1);
+        bulletHealth.TakeDamage(BulletDamageTaken);
     }
 
 

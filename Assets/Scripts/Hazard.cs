@@ -13,10 +13,11 @@ public class Hazard : MonoBehaviour
 
             HealthPoints EntityHp = CollisionTarget.GetComponent<HealthPoints>();
             EntityHp.TakeDamage(damage);
-            PlayerInvuln invulnerability = CollisionTarget.GetComponent<PlayerInvuln>();
+
+            PlayerInvulnerability invulnerability = CollisionTarget.GetComponent<PlayerInvulnerability>();
             if (invulnerability != null)
             {
-                invulnerability.ActiveInvuln();
+                invulnerability.ActiveInvulnerability();
             }
         }
     }

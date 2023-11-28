@@ -44,12 +44,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b46a3110e05863241a119622a1cd74f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 6111139908240874999, guid: 3c5efbafd7b228b40b4504546c8ddbf1, type: 3}
-  playerBulletPrefav: {fileID: 6070684084501678829, guid: a0f9fed9c9bf0d94f909ee47bf1c619a, type: 3}
-  BIGPrefav: {fileID: 66854970941534845, guid: bfdffc50f866bed4eb8ab4a4f51b4251, type: 3}
-  poolSize: 300
+  bulletPrefab: {fileID: 4208047285900346131, guid: 1fbb4a96f9bbb70479f7ea6bdadb9daf, type: 3}
+  playerBulletPrefab: {fileID: 6070684084501678829, guid: a0f9fed9c9bf0d94f909ee47bf1c619a, type: 3}
+  bigPrefav: {fileID: 7979677934102137175, guid: 4cbba6337a49b6e4e91a364353b2b33e, type: 3}
+  poolSize: 1000
   playerPoolSize: 30
-  BIGSize: 20
+  bigSize: 5
   bulletList: []
   playerBulletList: []
-  BigList: []
+  bigList: []

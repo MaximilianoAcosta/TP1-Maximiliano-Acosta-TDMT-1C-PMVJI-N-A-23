@@ -9,13 +9,13 @@ public class GameController : MonoBehaviour
     [SerializeField] GameObject boss2;
     [SerializeField] GameObject boss2HpBar;
     [SerializeField] GameObject bridgeToDisable;
-    [SerializeField] List<GameObject> CollidersToEnable;
-    [SerializeField] GameObject Player;
-    [SerializeField] private List<GameObject> Buttons;
+    [SerializeField] List<GameObject> collidersToEnable;
+    [SerializeField] GameObject player;
+    [SerializeField] private List<GameObject> buttons;
     [SerializeField] string colideWithTag;
     [SerializeField] AudioSource bgm;
-    [SerializeField] AudioClip IdleMusic;
-    [SerializeField] AudioClip CombatMusic;
+    [SerializeField] AudioClip idleMusic;
+    [SerializeField] AudioClip combatMusic;
     [Space(20)]
     [SerializeField] float phase2ShotingCooldown;
     [SerializeField] int phase2BurstAmmount;
@@ -57,10 +57,10 @@ public class GameController : MonoBehaviour
     public void StartBossFight()
     {
         bgm.Stop();
-        bgm.clip = CombatMusic;  
+        bgm.clip = combatMusic;  
         bgm.Play(); 
         bridgeToDisable.SetActive(false);
-        foreach(GameObject collider in CollidersToEnable)
+        foreach(GameObject collider in collidersToEnable)
         {
             collider.SetActive(true);
         }
@@ -79,9 +79,9 @@ public class GameController : MonoBehaviour
         CheckPhaseChange(boss1, boss2, boss1Hp);
         CheckPhaseChange(boss2, boss1, boss2Hp);
         CheckWinCondition(boss1Hp, boss2Hp);
-        if (Player.GetComponent<HealthPoints>().HP <= 0)
+        if (player.GetComponent<HealthPoints>().HP <= 0)
         {
-            foreach(GameObject button in Buttons)
+            foreach(GameObject button in buttons)
             {
                 button.SetActive(true);
             }
@@ -91,10 +91,10 @@ public class GameController : MonoBehaviour
     {
         if(boss1HP.HP <= 0 && boss2HP.HP<=0 && bridgeToDisable.activeSelf == false )
         {
-            bgm.clip = IdleMusic;
+            bgm.clip = idleMusic;
             bgm.Play();
             bridgeToDisable.SetActive(true);
-            foreach (GameObject collider in CollidersToEnable)
+            foreach (GameObject collider in collidersToEnable)
             {
                 collider.SetActive(false);
             }
@@ -106,11 +106,11 @@ public class GameController : MonoBehaviour
 
     private void CheckPhaseChange(GameObject boss1, GameObject boss2, HealthPoints bossHP1)
     {
-        if (boss1.GetComponent<Boss1Logic>().phase == 1 && bossHP1.HP <= bossHP1.maxHP * 3 / 4)
+        if (boss1.GetComponent<Boss1Behaviour>().phase == 1 && bossHP1.HP <= bossHP1.maxHP * 3 / 4)
         {
             PhaseChange(boss1, 2);
         }
-        if (boss1.GetComponent<Boss1Logic>().phase == 2 && bossHP1.HP <= bossHP1.maxHP / 3)
+        if (boss1.GetComponent<Boss1Behaviour>().phase == 2 && bossHP1.HP <= bossHP1.maxHP / 3)
         {
             PhaseChange(boss1, 3);
         }
@@ -129,7 +129,7 @@ public class GameController : MonoBehaviour
         int newRingAmmount = 0;
         float newShotPotency = 0;
         float newLineAttackDelay = 0;
-        Boss1Logic valueToChange = boss.GetComponent<Boss1Logic>();
+        Boss1Behaviour valueToChange = boss.GetComponent<Boss1Behaviour>();
         if (phase == 2)
         {
             newShotingCooldown = phase2ShotingCooldown;
@@ -158,12 +158,12 @@ public class GameController : MonoBehaviour
             newLineAttackDelay = phase4LineDelay;
         }
 
-        valueToChange.ShotingCooldown = newShotingCooldown;
+        valueToChange.shotingCooldown = newShotingCooldown;
         valueToChange.burstAmmount = newBurstAmmount;
         valueToChange.burstDelay = newBurstDelay;
-        valueToChange.RingAmmount = newRingAmmount;
-        valueToChange.ShotPotency = newShotPotency;
-        valueToChange.LineAttackDelay = newLineAttackDelay;
+        valueToChange.ringAmmount = newRingAmmount;
+        valueToChange.shotPotency = newShotPotency;
+        valueToChange.lineAttackDelay = newLineAttackDelay;
         valueToChange.phase = phase;
     }
 

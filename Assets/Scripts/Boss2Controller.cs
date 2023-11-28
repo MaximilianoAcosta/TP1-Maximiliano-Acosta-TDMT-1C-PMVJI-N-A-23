@@ -3,15 +3,12 @@ using UnityEngine;
 
 public class Boss2Controller : MonoBehaviour
 {
-    [SerializeField] Boss2Logic IAcontroller;
-    //TODO: TP1 - Unused method/variable
-    [SerializeField] CharacterMovement Movement;
-    [SerializeField] GameObject player;
-    [SerializeField] float movementTimer;
-    private static float TpMinX = -9f;
-    private static float TpMaxX = -5f;
-    private static float TpMinY = -7f;
-    private static float TpMaxY = -5f;
+    [SerializeField] Boss2Behaviour IAcontroller;
+    //TODO: TP1 - Unused method/variable 
+    static float TpMinX = -9f;
+    static float TpMaxX = -5f;
+    static float TpMinY = -7f;
+    static float TpMaxY = -5f;
     public bool finalPhase = false;
     public bool finalPhaseRunning = false;
 

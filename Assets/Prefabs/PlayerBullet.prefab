@@ -191,8 +191,7 @@ MonoBehaviour:
   bulletHealth: {fileID: 2230527019264894848}
   bulletAnimation: {fileID: 6409425671218400793}
   animatorParameterIsDead: isDead
-  player: {fileID: 0}
-  bullet: {fileID: 0}
+  colideWithTag: bossCollider
 --- !u!114 &2230527019264894848
 MonoBehaviour:
   m_ObjectHideFlags: 0

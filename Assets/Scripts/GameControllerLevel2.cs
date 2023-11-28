@@ -7,14 +7,15 @@ public class GameControllerLevel2 : MonoBehaviour
     [SerializeField] GameObject boss1;
     [SerializeField] GameObject boss1HpBar;
     [SerializeField] GameObject bridgeToDisable;
-    [SerializeField] List<GameObject> CollidersToEnable;
-    [SerializeField] List<GameObject> Buttons;
-    [SerializeField] GameObject Player;
+    [SerializeField] List<GameObject> collidersToEnable;
+    [SerializeField] List<GameObject> buttons;
+    [SerializeField] GameObject player;
     [SerializeField] Boss_2_GunRotationScript rotationScript;
     [SerializeField] string colideWithTag;
+    [Space(20)]
     [SerializeField] AudioSource bgm;
-    [SerializeField] AudioClip IdleMusic;
-    [SerializeField] AudioClip CombatMusic;
+    [SerializeField] AudioClip idleMusic;
+    [SerializeField] AudioClip combatMusic;
     [SerializeField] AudioClip phase2Music;
     [Space(20)]   
     [SerializeField] int phase2BurstAmmount;
@@ -24,7 +25,7 @@ public class GameControllerLevel2 : MonoBehaviour
     [Space(20)]
     
     HealthPoints boss1Hp;
-    bool ChangedPhase;
+    bool changedPhase;
     bool bossIsDead;
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -42,9 +43,9 @@ public class GameControllerLevel2 : MonoBehaviour
 
     public void StartBossFight()
     {
-        ChangeMusic(CombatMusic);
+        ChangeMusic(combatMusic);
         bridgeToDisable.SetActive(false);
-        foreach (GameObject collider in CollidersToEnable)
+        foreach (GameObject collider in collidersToEnable)
         {
             collider.SetActive(true);
         }
@@ -57,9 +58,9 @@ public class GameControllerLevel2 : MonoBehaviour
         
         CheckPhaseChange(boss1, boss1Hp);
         CheckWinCondition(boss1Hp);
-        if (Player.GetComponent<HealthPoints>().HP <= 0)
+        if (player.GetComponent<HealthPoints>().HP <= 0)
         {
-            foreach (GameObject button in Buttons)
+            foreach (GameObject button in buttons)
             {
                 button.SetActive(true);
             }
@@ -70,9 +71,9 @@ public class GameControllerLevel2 : MonoBehaviour
         if (boss1HP.HP <= 0 && !bossIsDead)
         {
             bossIsDead = true;
-            ChangeMusic(IdleMusic);
+            ChangeMusic(idleMusic);
             bridgeToDisable.SetActive(true);
-            foreach (GameObject collider in CollidersToEnable)
+            foreach (GameObject collider in collidersToEnable)
             {
                 collider.SetActive(false);
             }
@@ -84,9 +85,9 @@ public class GameControllerLevel2 : MonoBehaviour
 
     private void CheckPhaseChange(GameObject boss1, HealthPoints bossHP1)
     {
-        if (bossHP1.HP <= bossHP1.maxHP *0.25 && !ChangedPhase)
+        if (bossHP1.HP <= bossHP1.maxHP *0.25 && !changedPhase)
         {
-            ChangedPhase = true;
+            changedPhase = true;
             PhaseChange(boss1);
             ChangeMusic(phase2Music);
         }
@@ -96,11 +97,11 @@ public class GameControllerLevel2 : MonoBehaviour
     private void PhaseChange(GameObject boss)
     {
         
-        Boss2Logic valueToChange = boss.GetComponent<Boss2Logic>();
+        Boss2Behaviour valueToChange = boss.GetComponent<Boss2Behaviour>();
         rotationScript.rotationSpeed = phase2RotationSpeed;
         valueToChange.burstAmmount = phase2BurstAmmount;
-        valueToChange.RingAmmount = phase2RingAmmount;
-        valueToChange.RingRepeatAmmount = phase2RingRepeatAmmount;
+        valueToChange.ringAmmount = phase2RingAmmount;
+        valueToChange.ringRepeatAmmount = phase2RingRepeatAmmount;
         boss1.GetComponent<Boss2Controller>().finalPhase = true;
     }
 

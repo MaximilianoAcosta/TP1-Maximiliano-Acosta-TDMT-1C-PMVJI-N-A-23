@@ -3,15 +3,15 @@ using UnityEngine;
 [RequireComponent(typeof(Animator))]
 public class CharacterView : MonoBehaviour
 {
-    [SerializeField] private Animator animator;
-    [SerializeField] private CharacterMovement characterMovement;
-    [SerializeField] private HealthPoints characterHP;
-    [SerializeField] private string animatorParameterDirX = "dir_x";
-    [SerializeField] private string animatorParameterDirY = "dir_y";
-    [SerializeField] private string animatorParameterIsMoving = "isMoving";
-    [SerializeField] private string animatorParameterIsDashing = "isDashing";
-    [SerializeField] private string animatorParameterIsDead = "isDead";
-    [SerializeField] private Camera MainCamera;
+    [SerializeField]  Animator animator;
+    [SerializeField]  CharacterMovement characterMovement;
+    [SerializeField]  HealthPoints characterHP;
+    [SerializeField]  string animatorParameterDirX = "dir_x";
+    [SerializeField]  string animatorParameterDirY = "dir_y";
+    [SerializeField]  string animatorParameterIsMoving = "isMoving";
+    [SerializeField]  string animatorParameterIsDashing = "isDashing";
+    [SerializeField]  string animatorParameterIsDead = "isDead";
+    [SerializeField]  Camera MainCamera;
 
     private void Reset()
     {
