@@ -6334,7 +6334,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2001036961545973416, guid: cc22dad2ba606924cac4cf767f7f2e52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.19
+      value: -14.31
       objectReference: {fileID: 0}
     - target: {fileID: 2001036961545973416, guid: cc22dad2ba606924cac4cf767f7f2e52, type: 3}
       propertyPath: m_LocalPosition.z
@@ -6376,6 +6376,10 @@ PrefabInstance:
       propertyPath: pool
       value: 
       objectReference: {fileID: 1614387195}
+    - target: {fileID: 7379271355524088894, guid: cc22dad2ba606924cac4cf767f7f2e52, type: 3}
+      propertyPath: enemyHealth.Array.data[0]
+      value: 
+      objectReference: {fileID: 1969252201}
     - target: {fileID: 9161300193032348541, guid: cc22dad2ba606924cac4cf767f7f2e52, type: 3}
       propertyPath: bar
       value: 
@@ -11751,6 +11755,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 530d124ba67c2f24e8222fdd5eb18622, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1563208288 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7379271355524088894, guid: cc22dad2ba606924cac4cf767f7f2e52, type: 3}
+  m_PrefabInstance: {fileID: 784491628}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784491629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2649c742701d3674aab1bc27242b4526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1595097757
 GameObject:
   m_ObjectHideFlags: 0
@@ -12158,6 +12173,18 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1563208277}
+    - target: {fileID: 4068714496016073824, guid: 6aa8aa490c0fe5d4592e7d9c54421411, type: 3}
+      propertyPath: m_ActionEvents.Array.data[15].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1563208288}
+    - target: {fileID: 4068714496016073824, guid: 6aa8aa490c0fe5d4592e7d9c54421411, type: 3}
+      propertyPath: m_ActionEvents.Array.data[16].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1563208288}
+    - target: {fileID: 4068714496016073824, guid: 6aa8aa490c0fe5d4592e7d9c54421411, type: 3}
+      propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1563208288}
     - target: {fileID: 6477224862261827897, guid: 6aa8aa490c0fe5d4592e7d9c54421411, type: 3}
       propertyPath: m_Name
       value: InputController
@@ -14930,6 +14957,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6592938992030589366, guid: 4c59d997bc3c796439150998e59d8490, type: 3}
   m_PrefabInstance: {fileID: 734317676732787844}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1969252201 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2247644926415186685, guid: 4c59d997bc3c796439150998e59d8490, type: 3}
+  m_PrefabInstance: {fileID: 734317676732787844}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969252192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c51c9fb2e734aee46a19ea1a0dcbd9b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1971109269 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9114504355764806450, guid: 474c5eb4db13c4e418a568ad7f50aa7c, type: 3}
@@ -15972,6 +16010,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2247644926415186685, guid: 4c59d997bc3c796439150998e59d8490, type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6592938992030589366, guid: 4c59d997bc3c796439150998e59d8490, type: 3}
       propertyPath: m_Name
       value: Boss_2_Torkoklaktan
@@ -15988,6 +16030,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 784491629}
+    - target: {fileID: 7945430922895691354, guid: 4c59d997bc3c796439150998e59d8490, type: 3}
+      propertyPath: healthPoints
+      value: 
+      objectReference: {fileID: 1969252201}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

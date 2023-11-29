@@ -76,8 +76,51 @@ PrefabInstance:
       propertyPath: colideWithTag
       value: playerCollider
       objectReference: {fileID: 0}
+    - target: {fileID: 6807107612167209573, guid: 3c5efbafd7b228b40b4504546c8ddbf1, type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807107612167209573, guid: 3c5efbafd7b228b40b4504546c8ddbf1, type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807107612167209573, guid: 3c5efbafd7b228b40b4504546c8ddbf1, type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnDead
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807107612167209573, guid: 3c5efbafd7b228b40b4504546c8ddbf1, type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 3623189687870485587}
+    - target: {fileID: 6807107612167209573, guid: 3c5efbafd7b228b40b4504546c8ddbf1, type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807107612167209573, guid: 3c5efbafd7b228b40b4504546c8ddbf1, type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: CheckIfDead
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807107612167209573, guid: 3c5efbafd7b228b40b4504546c8ddbf1, type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: BulletController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807107612167209573, guid: 3c5efbafd7b228b40b4504546c8ddbf1, type: 3}
+      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3c5efbafd7b228b40b4504546c8ddbf1, type: 3}
+--- !u!114 &3623189687870485587 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6693187128780319415, guid: 3c5efbafd7b228b40b4504546c8ddbf1, type: 3}
+  m_PrefabInstance: {fileID: 7974430080078847716}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 241db6946428b09458ce5f028ddb9dca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

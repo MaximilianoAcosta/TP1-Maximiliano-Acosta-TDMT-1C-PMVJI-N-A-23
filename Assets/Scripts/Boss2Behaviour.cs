@@ -10,6 +10,7 @@ public class Boss2Behaviour : MonoBehaviour
     [SerializeField] Gun gunForSingleShot;
     [SerializeField] Boss2AnimController animator;
     [SerializeField] Boss2Controller bossController;
+    [SerializeField] HealthPoints healthPoints;
     [Space(20)]
     [SerializeField] public float shotPotency;
     [Space(20)]
@@ -39,14 +40,13 @@ public class Boss2Behaviour : MonoBehaviour
     private Vector2 movementDirection;
     [SerializeField] CharacterMovement movement;
 
-    private void Update()
+    public void OnDead()
     {
         //TODO: TP2 - Optimization - Should be event based
-        if (this.GetComponent<HealthPoints>().HP <= 0)
-        {
+        
             StopAllCoroutines();
             animator.AttackAnimationDeath(true);
-        }
+        
     }
 
 

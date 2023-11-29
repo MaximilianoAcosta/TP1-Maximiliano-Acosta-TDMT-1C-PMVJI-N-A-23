@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CharacterMovement : MonoBehaviour
 {
-    [SerializeField] private float speed = 1f;
+    [SerializeField] float speed = 1f;
     
     public Vector2 direction;
 
@@ -17,5 +17,9 @@ public class CharacterMovement : MonoBehaviour
     public void SetDirection(Vector2 Direction)
     {
         direction = Direction;
+    }
+    public void SetSpeed(int value)
+    {
+        speed = value;
     }
 }

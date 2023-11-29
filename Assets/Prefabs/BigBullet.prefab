@@ -191,7 +191,6 @@ MonoBehaviour:
   bulletHealth: {fileID: 8209760199669505806}
   bulletAnimation: {fileID: 422620924141537621}
   animatorParameterIsDead: isDead
-  player: {fileID: 0}
 --- !u!114 &8209760199669505806
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,7 +205,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 1
   HP: 1
+  healthManager: {fileID: 11400000, guid: 509ae1f5d58b1c145be4bf90ebfd01ba, type: 2}
   DeathAnimationDelay: 0.71
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6481021261706622171}
+        m_TargetAssemblyTypeName: BulletController, Assembly-CSharp
+        m_MethodName: OnDead
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6368726151213356362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -236,8 +251,9 @@ MonoBehaviour:
   pool: {fileID: 0}
   gun: {fileID: 7217441352329770807}
   burstDelay: 0.5
-  ShotPotency: 1.4
-  NumberOfShots: 4
+  shotPotency: 2
+  numberOfShots: 4
+  bulletPoolTag: pool
 --- !u!114 &7878580867279840535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +280,7 @@ GameObject:
   - component: {fileID: 8289763203737175508}
   - component: {fileID: 7217441352329770807}
   - component: {fileID: 5920847183183808137}
+  - component: {fileID: 2911289494191267244}
   m_Layer: 0
   m_Name: bulletGun
   m_TagString: Untagged
@@ -298,7 +315,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2308451df0d67342ac85d1544544609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 2763168673496119673, guid: cc22dad2ba606924cac4cf767f7f2e52, type: 3}
+  target: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  worldPosition: {x: 0, y: 0, z: 0}
 --- !u!114 &7217441352329770807
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,8 +331,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 6086846959867404835}
-  TimerCheck: 0
-  gunAudio: {fileID: 0}
+  timerCheck: 0
+  gunAudio: {fileID: 5920847183183808137}
 --- !u!82 &5920847183183808137
 AudioSource:
   m_ObjectHideFlags: 0
@@ -410,3 +429,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &2911289494191267244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5217666082073541034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d15a3ea1c177bb542888fbf7a4288295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  worldPosition: {x: 0, y: 0, z: 0}
+  targetTag: playerCollider

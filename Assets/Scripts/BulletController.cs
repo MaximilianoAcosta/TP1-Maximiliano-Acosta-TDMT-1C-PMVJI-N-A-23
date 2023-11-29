@@ -7,6 +7,7 @@ public class BulletController : MonoBehaviour
     [SerializeField] Animator bulletAnimation;
     [SerializeField] string animatorParameterIsDead = "isDead";
     //TODO: TP1 - Unused method/variable
+   
     public void OnEnable()
     {
         GetComponent<CircleCollider2D>().enabled = true;
@@ -14,7 +15,7 @@ public class BulletController : MonoBehaviour
         bulletAnimation.SetBool(animatorParameterIsDead, false);
     }
 
-    public void Update()
+    public void OnDead()
     {
         if (bulletHealth != null)
         {

@@ -8,9 +8,9 @@ public class AimRotator : MonoBehaviour
     //[field: SerializeField]public GameObject Target { get; set; }
     //TODO: TP2 - Unclear name - A better name would be "target".
     [SerializeField] public GameObject target;
-    Vector3 targetPosition;
+    public Vector3 targetPosition;
     //TODO: TP2 - Syntax - Consistency in access modifiers (private/protected/public/etc)
-    Vector3 worldPosition;
+    public Vector3 worldPosition;
     new Camera camera;
     Mouse mouse;
     //TODO: TP2 - Syntax - Consistency in access modifiers (private/protected/public/etc)
@@ -44,7 +44,7 @@ public class AimRotator : MonoBehaviour
         RotateAimTarget(worldPosition, transform);
     }
     
-    private void RotateAimTarget(Vector3 worldpos, Transform transform)
+    public void RotateAimTarget(Vector3 worldpos, Transform transform)
     {
         Vector3 rotation = (worldpos - transform.position).normalized;
 

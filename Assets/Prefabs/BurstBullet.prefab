@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 7142886944166221315}
-  TimerCheck: 0
+  timerCheck: 0
   gunAudio: {fileID: 0}
 --- !u!82 &4259916733395021777
 AudioSource:
@@ -335,8 +335,6 @@ MonoBehaviour:
   bulletHealth: {fileID: 6110167740657353515}
   bulletAnimation: {fileID: 561451364689665472}
   animatorParameterIsDead: isDead
-  player: {fileID: 0}
-  bullet: {fileID: 0}
 --- !u!114 &6110167740657353515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -351,7 +349,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 1
   HP: 1
+  healthManager: {fileID: 11400000, guid: 509ae1f5d58b1c145be4bf90ebfd01ba, type: 2}
   DeathAnimationDelay: 0.71
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 333427351785608047}
+        m_TargetAssemblyTypeName: BulletController, Assembly-CSharp
+        m_MethodName: OnDead
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7159948166628627971
 MonoBehaviour:
   m_ObjectHideFlags: 0

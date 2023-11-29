@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.XR;
 
 
 //TODO: TP2 - Unclear name - Logic is not a very good name. All C# is logic.
@@ -31,9 +32,7 @@ public class Boss1Behaviour : MonoBehaviour
     private float radiusRingAttack = 10f;
     private float angleRingAttack = 10f;
     public int phase = 1;
-
-    
-
+ 
 
 
     public IEnumerator BasicShot()
@@ -53,7 +52,7 @@ public class Boss1Behaviour : MonoBehaviour
             
             animator.AttackAnimationSwipe(false);
         }
-
+        
         bossController.ResetShot();
     }
 
@@ -81,6 +80,7 @@ public class Boss1Behaviour : MonoBehaviour
         Attack(ringAmmount, gunForRing);
         
         animator.AttackAnimationSlam(false);
+        
         bossController.ResetShot();
     }
     public IEnumerator Teleport(float minX, float maxX,float minY, float MaxY)

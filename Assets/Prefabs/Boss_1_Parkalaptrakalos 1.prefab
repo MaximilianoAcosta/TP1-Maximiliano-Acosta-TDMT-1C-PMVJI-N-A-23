@@ -99,8 +99,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 7659696609057807247}
-  TimerCheck: 0
-  gunAudio: {fileID: 0}
+  timerCheck: 0
+  gunAudio: {fileID: 9130454646554806138}
 --- !u!82 &9130454646554806138
 AudioSource:
   m_ObjectHideFlags: 0
@@ -402,8 +402,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 1892049994240923322}
-  TimerCheck: 0
-  gunAudio: {fileID: 0}
+  timerCheck: 0
+  gunAudio: {fileID: 942858042853439147}
 --- !u!82 &942858042853439147
 AudioSource:
   m_ObjectHideFlags: 0
@@ -599,7 +599,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 4125488694884595101}
-  TimerCheck: 0
+  timerCheck: 0
   gunAudio: {fileID: 3216513324593038890}
 --- !u!82 &3216513324593038890
 AudioSource:
@@ -751,7 +751,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 670cd5d46e1acbe4e9112e50fce10220, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  IAcontroller: {fileID: 6282497539518252310}
+  iaController: {fileID: 6282497539518252310}
 --- !u!114 &271967097292901558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -765,8 +765,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawnPoint: {fileID: 8979963258408818097}
-  TimerCheck: 0
-  gunAudio: {fileID: 0}
+  timerCheck: 0
+  gunAudio: {fileID: 5975536487087798397}
 --- !u!114 &6282497539518252310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,24 +780,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pool: {fileID: 0}
-  Guns:
+  guns:
   - {fileID: 902427083151444314}
   - {fileID: 6980363505971025479}
   - {fileID: 4745385318471871477}
-  GunForRing: {fileID: 271967097292901558}
-  Animation: {fileID: 4891879633715864791}
-  BossController: {fileID: 324978726334134848}
-  ShotPotency: 1
-  ShotingCooldown: 1
-  Attack1AnimationDelay: 0.36
+  gunForRing: {fileID: 271967097292901558}
+  animator: {fileID: 4891879633715864791}
+  bossController: {fileID: 324978726334134848}
+  shotPotency: 1
+  shotingCooldown: 1
+  attack1AnimationDelay: 0.3
   burstDelay: 0.2
   burstAmmount: 3
-  Attack2AnimationDelay: 0.5
-  RingAmmount: 20
+  attack2AnimationDelay: 0.5
+  ringAmmount: 20
   teleportAnimationinDelay: 0.5
-  teleportAnimationOutDelay: 0.1
-  LineAttackDuration: 10
-  LineAttackDelay: 0.07
+  teleportAnimationOutDelay: 0.5
+  lineAttackDuration: 5
+  lineAttackDelay: 0.1
   phase: 1
 --- !u!114 &9026705064805601337
 MonoBehaviour:
@@ -827,7 +827,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 1500
   HP: 1500
-  DeathAnimationDelay: 1.14
+  healthManager: {fileID: 11400000, guid: 509ae1f5d58b1c145be4bf90ebfd01ba, type: 2}
+  DeathAnimationDelay: 0.5
 --- !u!58 &1027702222346030224
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -1088,4 +1089,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2308451df0d67342ac85d1544544609, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  target: {fileID: 0}

@@ -39,6 +39,12 @@ public class CharacterView : MonoBehaviour
             animator.SetFloat(animatorParameterDirY, dirY);
         }
     }
+    public void OnDead()
+    {
+        
+            isDeadAnimation();
+        
+    }
 
     public void isDashingAnimation(bool isDashing)
     {

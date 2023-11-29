@@ -11,7 +11,8 @@ public class Boss2Controller : MonoBehaviour
     static float TpMaxY = -5f;
     public bool finalPhase = false;
     public bool finalPhaseRunning = false;
-
+    static float teleportFinalValueX = -7;
+    static float teleportFinalValueY = -6;
     void Start()
     {
 
@@ -26,7 +27,7 @@ public class Boss2Controller : MonoBehaviour
 
             if (finalPhase)
             {
-                StopAllCoroutines();
+                IAcontroller.StopAllCoroutines();
                 StartCoroutine(FinalAttack());
             }
             else
@@ -61,7 +62,7 @@ public class Boss2Controller : MonoBehaviour
     public IEnumerator FinalAttack()
     {
         finalPhaseRunning = true;
-        StartCoroutine(IAcontroller.Teleport(-7, -7, -6, -6));
+        StartCoroutine(IAcontroller.Teleport(teleportFinalValueX, teleportFinalValueX, teleportFinalValueY, teleportFinalValueY));
 
         yield return new WaitForSeconds(3);
         StartCoroutine(IAcontroller.RingShot());

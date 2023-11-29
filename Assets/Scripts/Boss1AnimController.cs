@@ -8,17 +8,17 @@ public class Boss1AnimController : MonoBehaviour
     [SerializeField] string animatorParameterOnAttackRing = "onAttackRing";
     [SerializeField] string animatorParameterIsTeleporting = "isTeleporting";
 
-    public void AttackAnimationSwipe(bool EnableORdisable)
+    public void AttackAnimationSwipe(bool EnableOrDisable)
     {
-        AttackAnimation(animatorParameterOnAttackBurst, EnableORdisable);
+        AttackAnimation(animatorParameterOnAttackBurst, EnableOrDisable);
     }
-    public void AttackAnimationSlam(bool EnableORdisable) 
+    public void AttackAnimationSlam(bool EnableOrDisable) 
     {
-        AttackAnimation(animatorParameterOnAttackRing, EnableORdisable);
+        AttackAnimation(animatorParameterOnAttackRing, EnableOrDisable);
     }
-    public void AttackAnimationTeleport(bool EnableORdisable) 
+    public void AttackAnimationTeleport(bool EnableOrDisable) 
     {
-        AttackAnimation(animatorParameterIsTeleporting, EnableORdisable);
+        AttackAnimation(animatorParameterIsTeleporting, EnableOrDisable);
     }
     private void AttackAnimation(string AnimationParameter, bool onAttack)
     {

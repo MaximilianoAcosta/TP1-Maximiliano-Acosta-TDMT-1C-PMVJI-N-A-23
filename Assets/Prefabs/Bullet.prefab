@@ -203,7 +203,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 1
   HP: 1
+  healthManager: {fileID: 11400000, guid: 509ae1f5d58b1c145be4bf90ebfd01ba, type: 2}
   DeathAnimationDelay: 0.71
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6693187128780319415}
+        m_TargetAssemblyTypeName: BulletController, Assembly-CSharp
+        m_MethodName: OnDead
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &6730448424295982963
 MonoBehaviour:
   m_ObjectHideFlags: 0

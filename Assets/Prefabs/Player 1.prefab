@@ -244,6 +244,7 @@ GameObject:
   - component: {fileID: 9161300193032348541}
   - component: {fileID: 7030260236239476804}
   - component: {fileID: 2843264132197757707}
+  - component: {fileID: 7379271355524088894}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: playerCollider
@@ -416,7 +417,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHP: 100
   HP: 100
+  healthManager: {fileID: 11400000, guid: 509ae1f5d58b1c145be4bf90ebfd01ba, type: 2}
   DeathAnimationDelay: 1.56
+  OnDeath:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5055020330027384792}
+        m_TargetAssemblyTypeName: CharacterView, Assembly-CSharp
+        m_MethodName: OnDead
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5117684801638139702
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,6 +571,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &7379271355524088894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2763168673496119673}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2649c742701d3674aab1bc27242b4526, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newhealthManager: {fileID: 11400000, guid: 4bdae69c342437245b0c4242550041d8, type: 2}
+  playerHp: {fileID: 1391097255646953517}
+  playerspeed: {fileID: 6349728133471784083}
+  speedCheatActiveValue: 2
+  speedCheatInactiveValue: 1
+  enemyHealth:
+  - {fileID: 0}
+  damageFraction: 5
 --- !u!1 &2770488568826089404
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +729,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  worldPosition: {x: 0, y: 0, z: 0}
 --- !u!1 &7427701103725116930
 GameObject:
   m_ObjectHideFlags: 0

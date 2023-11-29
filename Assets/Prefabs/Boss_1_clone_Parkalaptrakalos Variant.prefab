@@ -28,13 +28,25 @@ PrefabInstance:
       propertyPath: HP
       value: 750
       objectReference: {fileID: 0}
+    - target: {fileID: 1557163471520542925, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
+      propertyPath: healthManager
+      value: 
+      objectReference: {fileID: 11400000, guid: 509ae1f5d58b1c145be4bf90ebfd01ba, type: 2}
+    - target: {fileID: 1557163471520542925, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1557163471520542925, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
+      propertyPath: OnDeath.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6282497539518252310, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
       propertyPath: Animation
       value: 
       objectReference: {fileID: 5356346460737329605}
     - target: {fileID: 6810971821499949294, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
       propertyPath: m_Name
-      value: Boss_2_Parkalaptrakalos Variant
+      value: Boss_1_clone_Parkalaptrakalos Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6810971821499949294, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
       propertyPath: m_IsActive

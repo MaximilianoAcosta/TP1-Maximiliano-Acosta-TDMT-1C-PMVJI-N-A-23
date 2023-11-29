@@ -4,28 +4,27 @@ using UnityEngine;
 
 public class BigBulletController : MonoBehaviour
 {
-    [SerializeField] GameObject pool;
+    [SerializeField] BulletPool pool;
     [SerializeField] Gun gun;
     [SerializeField] float burstDelay;
     [SerializeField] float shotPotency;
     [SerializeField] float numberOfShots;
     [SerializeField] string bulletPoolTag;
     //TODO: TP2 - Syntax - Consistency in access modifiers (private/protected/public/etc)
-    BulletPool bulletPool;
+    
 
     private void Awake()
     {
         //TODO: TP2 - Fix - Why is this class setting a variable in another one based on an entirely separate object?
         //Try not to use Find()
-        transform.Find("bulletGun").GetComponent<AimRotator>().target = GameObject.FindGameObjectWithTag("playerCollider");
+        //transform.Find("bulletGun").GetComponent<AimRotator>().target = GameObject.FindGameObjectWithTag("playerCollider");
         //TODO: TP2 - Fix - Hardcoded value/s
-        pool = GameObject.FindGameObjectWithTag(bulletPoolTag);
+        pool = GameObject.FindGameObjectWithTag(bulletPoolTag).GetComponent<BulletPool>();
     }
 
 
     void OnEnable()
     {
-        bulletPool = pool.GetComponent<BulletPool>();
         StartCoroutine(bigBulletShot());
     }
     private IEnumerator bigBulletShot()
@@ -33,7 +32,7 @@ public class BigBulletController : MonoBehaviour
         for(int i = 0; i < numberOfShots; i++)
         {
             yield return new WaitForSeconds(burstDelay);
-            GameObject attack = bulletPool.GetBullet();
+            GameObject attack = pool.GetBullet();
             gun.Shoot(attack, shotPotency);
         }
        

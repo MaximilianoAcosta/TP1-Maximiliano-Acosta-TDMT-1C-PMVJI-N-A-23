@@ -19,6 +19,7 @@ public class Hazard : MonoBehaviour
             {
                 invulnerability.ActiveInvulnerability();
             }
+            
         }
     }
 }

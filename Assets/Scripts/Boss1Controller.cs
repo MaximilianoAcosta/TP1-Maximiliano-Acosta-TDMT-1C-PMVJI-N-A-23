@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Boss1Controller : MonoBehaviour
 {
@@ -7,39 +9,42 @@ public class Boss1Controller : MonoBehaviour
     private static float TpMaxX = 4.5f;
     private static float TpMinY = -2f;
     private static float TpMaxY = 0.5f;
-
+   
+    List<IEnumerator> ATTACKS = new List<IEnumerator>();
+    private void Awake()
+    {
+        ATTACKS.Add(iaController.RingShot());
+        ATTACKS.Add(iaController.BasicShot());
+        ATTACKS.Add(iaController.Teleport(TpMinX, TpMaxX, TpMinY, TpMaxY));
+        ATTACKS.Add(iaController.LineShot());
+        ATTACKS.Add(iaController.BigShot());
+    }
     void Start()
     {
-        
         StartCoroutine(iaController.Teleport(TpMinX, TpMaxX, TpMinY, TpMaxY));
     }
-    public void ResetShot()
-    {
-        int randomValue = Random.Range(0, 5);
         //TODO: TP2 - Fix - Clean code - You could create a list of IEnumerators and use the random number as the index :)
         // IEnumerator[] attacks = { IAcontroller.RingShot(), IAcontroller.BasicShot(), ...};
         // StartCoroutine(attacks[randomValue]);
-        if (randomValue == 0)
-        {
-            StartCoroutine(iaController.RingShot());
-        }
-        else if (randomValue == 1)
-        {
-            StartCoroutine(iaController.BasicShot());
-        }
-        else if (randomValue == 2)
-        {
-            StartCoroutine(iaController.Teleport(TpMinX, TpMaxX, TpMinY, TpMaxY));
-        }
-        else if (randomValue == 3)
-        {
-            StartCoroutine(iaController.LineShot());
-        }
-        else if(randomValue == 4)
-        {
-            StartCoroutine(iaController.BigShot());
-        }
-
+    public void ResetShot()
+    {
+        RestartList();
+        int randomValue = Random.Range(0, 4);
+        IEnumerator ChosenAttack = ATTACKS[randomValue];
+        Debug.Log(ChosenAttack);
+        StopAllCoroutines();
+        StartCoroutine(ChosenAttack);
+        
+     
+    }
+    private void RestartList()
+    {
+        ATTACKS.Clear();
+        ATTACKS.Add(iaController.RingShot());
+        ATTACKS.Add(iaController.BasicShot());
+        ATTACKS.Add(iaController.Teleport(TpMinX, TpMaxX, TpMinY, TpMaxY));
+        ATTACKS.Add(iaController.LineShot());
+        ATTACKS.Add(iaController.BigShot());
     }
 
 }
