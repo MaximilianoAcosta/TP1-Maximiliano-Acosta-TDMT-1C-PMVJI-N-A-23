@@ -59,16 +59,7 @@ public class GameControllerLevel2 : MonoBehaviour
         
         CheckPhaseChange(boss1, boss1Hp);
         CheckWinCondition(boss1Hp);
-        if (player.GetComponent<HealthPoints>().HP <= 0)
-        {
-            foreach (GameObject button in buttons)
-            {
-                button.SetActive(true);
-            }
-        }
-        var eventSystem = EventSystem.current;
-        eventSystem.SetSelectedGameObject(buttons[1], new BaseEventData(eventSystem));
-        eventSystem.SetSelectedGameObject(buttons[0], new BaseEventData(eventSystem));
+       
     }
     private void CheckWinCondition(HealthPoints boss1HP)
     {
@@ -86,7 +77,18 @@ public class GameControllerLevel2 : MonoBehaviour
             
         }
     }
-
+    public void DeathHudCheck()
+    {
+        if (player.GetComponent<HealthPoints>().HP <= 0)
+        {
+            foreach (GameObject button in buttons)
+            {
+                button.SetActive(true);
+            }
+            var eventSystem = EventSystem.current;
+            eventSystem.SetSelectedGameObject(buttons[0]);
+        }
+    }
     private void CheckPhaseChange(GameObject boss1, HealthPoints bossHP1)
     {
         if (bossHP1.HP <= bossHP1.maxHP *0.25 && !changedPhase)
