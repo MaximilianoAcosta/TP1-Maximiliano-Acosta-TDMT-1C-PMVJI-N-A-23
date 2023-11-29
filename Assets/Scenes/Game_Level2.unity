@@ -6302,7 +6302,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 727624361}
   m_sendNavigationEvents: 1
   m_DragThreshold: 10
 --- !u!4 &774036911
@@ -12166,6 +12166,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1563208277}
     - target: {fileID: 4068714496016073824, guid: 6aa8aa490c0fe5d4592e7d9c54421411, type: 3}
+      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1926050498}
+    - target: {fileID: 4068714496016073824, guid: 6aa8aa490c0fe5d4592e7d9c54421411, type: 3}
       propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1563208277}
@@ -12173,6 +12177,10 @@ PrefabInstance:
       propertyPath: m_ActionEvents.Array.data[3].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1563208277}
+    - target: {fileID: 4068714496016073824, guid: 6aa8aa490c0fe5d4592e7d9c54421411, type: 3}
+      propertyPath: m_ActionEvents.Array.data[14].m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1563208288}
     - target: {fileID: 4068714496016073824, guid: 6aa8aa490c0fe5d4592e7d9c54421411, type: 3}
       propertyPath: m_ActionEvents.Array.data[15].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -12184,7 +12192,7 @@ PrefabInstance:
     - target: {fileID: 4068714496016073824, guid: 6aa8aa490c0fe5d4592e7d9c54421411, type: 3}
       propertyPath: m_ActionEvents.Array.data[17].m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1563208288}
+      objectReference: {fileID: 1926050498}
     - target: {fileID: 6477224862261827897, guid: 6aa8aa490c0fe5d4592e7d9c54421411, type: 3}
       propertyPath: m_Name
       value: InputController
@@ -14784,6 +14792,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.9949617, y: 4.5284977}
   m_EdgeRadius: 0
+--- !u!114 &1926050498 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9094358723918529554, guid: cc22dad2ba606924cac4cf767f7f2e52, type: 3}
+  m_PrefabInstance: {fileID: 784491628}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2308451df0d67342ac85d1544544609, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1947989306
 GameObject:
   m_ObjectHideFlags: 0
@@ -15962,10 +15981,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 154555291095576895, guid: 4c59d997bc3c796439150998e59d8490, type: 3}
-      propertyPath: target
-      value: 
-      objectReference: {fileID: 784491629}
     - target: {fileID: 609936254972734579, guid: 4c59d997bc3c796439150998e59d8490, type: 3}
       propertyPath: bar
       value: 
@@ -16010,10 +16025,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 2247644926415186685, guid: 4c59d997bc3c796439150998e59d8490, type: 3}
-      propertyPath: OnTakeDamage.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 6592938992030589366, guid: 4c59d997bc3c796439150998e59d8490, type: 3}
       propertyPath: m_Name
       value: Boss_2_Torkoklaktan
@@ -16030,10 +16041,6 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 784491629}
-    - target: {fileID: 7945430922895691354, guid: 4c59d997bc3c796439150998e59d8490, type: 3}
-      propertyPath: healthPoints
-      value: 
-      objectReference: {fileID: 1969252201}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

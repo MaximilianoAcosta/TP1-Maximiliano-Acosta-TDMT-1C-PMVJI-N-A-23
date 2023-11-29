@@ -4,24 +4,24 @@ using UnityEngine.InputSystem;
 
 public class InputReader : MonoBehaviour
 {
-    [SerializeField] private BulletPool pool;
+    [SerializeField]  BulletPool pool;
 
-    [SerializeField] private float dashingPower = 20f;
-    [SerializeField] private float dashingTime = 0.2f;
-    [SerializeField] private float dashingCooldown = 0.2f;
+    [SerializeField]  float dashingPower = 20f;
+    [SerializeField]  float dashingTime = 0.2f;
+    [SerializeField]  float dashingCooldown = 0.2f;
 
-    [SerializeField] private CharacterMovement characterMovement;
-    [SerializeField] private CapsuleCollider2D characterHitBox;
-    [SerializeField] private CharacterView characterView;
+    [SerializeField]  CharacterMovement characterMovement;
+    [SerializeField]  CapsuleCollider2D characterHitBox;
+    [SerializeField]  CharacterView characterView;
 
-    [SerializeField] private Gun gun;
+    [SerializeField]  Gun gun;
 
     [SerializeField] public AudioSource playerAudio;
     [SerializeField] public AudioSource Dashaudio;
 
-    private Vector2 inputValue;
-    private bool canDash = true;
-    private bool isDashing = false;
+     Vector2 inputValue;
+     bool canDash = true;
+     bool isDashing = false;
 
     public void SetMovementValue(InputAction.CallbackContext inputContext)
     {

@@ -1,11 +1,9 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
 public class ControllerLookInput : MonoBehaviour
 {
-    [SerializeField] private GameObject aimRotator;
+    [SerializeField] GameObject aimRotator;
    public void HandleLookInput(InputAction.CallbackContext inputContext)
     {
         Vector2 inputValue = inputContext.ReadValue<Vector2>();

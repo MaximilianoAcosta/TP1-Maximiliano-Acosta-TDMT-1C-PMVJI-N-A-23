@@ -1388,7 +1388,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8099661621319480819}
-  - component: {fileID: 154555291095576895}
+  - component: {fileID: 8333525584528615009}
   m_Layer: 0
   m_Name: BossAim
   m_TagString: Untagged
@@ -1412,7 +1412,7 @@ Transform:
   - {fileID: 5598171668816302776}
   m_Father: {fileID: 1829052560182345912}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &154555291095576895
+--- !u!114 &8333525584528615009
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1421,12 +1421,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 5524975082777775698}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c2308451df0d67342ac85d1544544609, type: 3}
+  m_Script: {fileID: 11500000, guid: d15a3ea1c177bb542888fbf7a4288295, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   targetPosition: {x: 0, y: 0, z: 0}
   worldPosition: {x: 0, y: 0, z: 0}
+  targetTag: playerCollider
 --- !u!1 &5764063535591652244
 GameObject:
   m_ObjectHideFlags: 0
@@ -2180,7 +2181,7 @@ MonoBehaviour:
   gunForSingleShot: {fileID: 77947445673281537}
   animator: {fileID: 3158898805396249156}
   bossController: {fileID: 8884221423961471696}
-  healthPoints: {fileID: 0}
+  healthPoints: {fileID: 2247644926415186685}
   shotPotency: 1.3
   shotingCooldown: 1
   attack1AnimationDelay: 0.4

@@ -29,8 +29,8 @@ public class Boss1Behaviour : MonoBehaviour
     [Space(20)]
     [SerializeField] float lineAttackDuration;
     [SerializeField] public float lineAttackDelay;
-    private float radiusRingAttack = 10f;
-    private float angleRingAttack = 10f;
+    float radiusRingAttack = 10f;
+    float angleRingAttack = 10f;
     public int phase = 1;
  
 

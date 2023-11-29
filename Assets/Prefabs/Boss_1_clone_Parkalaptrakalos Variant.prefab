@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6810971821499949294, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8979963258408818097, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -94,9 +94,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4405019656813072825, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
+    - {fileID: 631125793406059569, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
+    - {fileID: 2105194467008771072, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9038125552398876360, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6845330554491252726}
     - targetCorrespondingSourceObject: {fileID: 4249116724613050409, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
       insertIndex: -1
       addedObject: {fileID: 6383527955934066107}
@@ -421,3 +426,24 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!1 &8420391462762234842 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9038125552398876360, guid: c398d0ca8caa8cb4c9d30f9d0113fed6, type: 3}
+  m_PrefabInstance: {fileID: 699995427183885586}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6845330554491252726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420391462762234842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d15a3ea1c177bb542888fbf7a4288295, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  targetPosition: {x: 0, y: 0, z: 0}
+  worldPosition: {x: 0, y: 0, z: 0}
+  targetTag: playerCollider

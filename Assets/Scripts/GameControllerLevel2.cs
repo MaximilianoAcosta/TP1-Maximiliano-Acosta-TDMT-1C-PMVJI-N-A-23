@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class GameControllerLevel2 : MonoBehaviour
 {
@@ -65,6 +66,9 @@ public class GameControllerLevel2 : MonoBehaviour
                 button.SetActive(true);
             }
         }
+        var eventSystem = EventSystem.current;
+        eventSystem.SetSelectedGameObject(buttons[1], new BaseEventData(eventSystem));
+        eventSystem.SetSelectedGameObject(buttons[0], new BaseEventData(eventSystem));
     }
     private void CheckWinCondition(HealthPoints boss1HP)
     {

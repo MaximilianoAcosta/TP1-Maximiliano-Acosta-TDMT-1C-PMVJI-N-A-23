@@ -1,9 +1,13 @@
 using UnityEngine;
 public class BossAimRotator : AimRotator
 {
-
+    [SerializeField] public GameObject target;
     [SerializeField] string targetTag;
 
+    void Update()
+    {
+        GetTargetPosition();
+    }
     private void Awake()
     {
         target = FindObject(targetTag);
@@ -13,12 +17,13 @@ public class BossAimRotator : AimRotator
     {
         return GameObject.FindGameObjectWithTag(targetTag);
     }
-    private void GetTargetPosition()
+    public override void GetTargetPosition()
     {
             targetPosition = target.transform.position;
             targetPosition.z = target.transform.position.z;
             worldPosition = target.transform.position;
         
-        RotateAimTarget(worldPosition, transform);
+        RotateAimTarget(worldPosition);
+        
     }
 }

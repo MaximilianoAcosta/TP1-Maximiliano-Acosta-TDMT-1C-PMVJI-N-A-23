@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class GameController : MonoBehaviour
 {
@@ -79,12 +80,19 @@ public class GameController : MonoBehaviour
         CheckPhaseChange(boss1, boss2, boss1Hp);
         CheckPhaseChange(boss2, boss1, boss2Hp);
         CheckWinCondition(boss1Hp, boss2Hp);
+       
+    }
+
+    public void DeathHudCheck()
+    {
         if (player.GetComponent<HealthPoints>().HP <= 0)
         {
-            foreach(GameObject button in buttons)
+            foreach (GameObject button in buttons)
             {
                 button.SetActive(true);
             }
+            var eventSystem = EventSystem.current;
+            eventSystem.SetSelectedGameObject(buttons[0]);
         }
     }
     private void CheckWinCondition(HealthPoints boss1HP, HealthPoints boss2HP)

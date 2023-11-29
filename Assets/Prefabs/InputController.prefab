@@ -74,7 +74,19 @@ MonoBehaviour:
     m_ActionId: 06470897-1ccf-4bac-9eca-9c5e016fbe40
     m_ActionName: Player/Move[/Keyboard/w,/Keyboard/upArrow,/Keyboard/s,/Keyboard/downArrow,/Keyboard/a,/Keyboard/leftArrow,/Keyboard/d,/Keyboard/rightArrow]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AimRotator, Assembly-CSharp
+        m_MethodName: HandleLookInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: e55cdf2e-85a0-40f7-acb0-93eefcccb35f
     m_ActionName: Player/Look[/Mouse/delta]
   - m_PersistentCalls:
@@ -150,10 +162,6 @@ MonoBehaviour:
     m_ActionId: 3a7cb17c-492c-4fc9-95aa-ac54891b4f87
     m_ActionName: UI/TrackedDeviceOrientation
   - m_PersistentCalls:
-      m_Calls: []
-    m_ActionId: a2d614af-eb74-47b9-aacd-5e99cd104fba
-    m_ActionName: Player/MousePosition[/Mouse/position]
-  - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: CheatEnabler, Assembly-CSharp
@@ -201,6 +209,22 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: c5b9a525-1411-4ffe-9dac-f97bbb2cf7bb
     m_ActionName: Player/DamageCheat[/Keyboard/f3]
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: AimRotator, Assembly-CSharp
+        m_MethodName: HandleMouseLookInput
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+    m_ActionId: c04ed400-d889-4ef7-8e5b-15480b2629eb
+    m_ActionName: Player/mouseLook[/Mouse/position]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player

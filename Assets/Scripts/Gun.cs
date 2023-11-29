@@ -14,9 +14,6 @@ public class Gun : MonoBehaviour
     {
         gunAudio = GetComponent<AudioSource>();
     }
-
-
-    
         //TODO: TP2 - Could be a coroutine/Invoke
     
     private IEnumerator CheckForShotCooldown()
