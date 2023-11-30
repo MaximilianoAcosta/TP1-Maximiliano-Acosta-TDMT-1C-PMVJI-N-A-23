@@ -27,7 +27,7 @@ public class Boss1Controller : MonoBehaviour
             iaController.BigShot(),
         };
 
-        int randomValue = Random.Range(0, 4);
+        int randomValue = Random.Range(0, 5);
         StartCoroutine(attacks[randomValue]);
     }
 }
